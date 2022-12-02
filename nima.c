@@ -1,3 +1,5 @@
+// in this editation we explain our code
+
 #include <stdio.h>
 #include <math.h>
 
@@ -17,16 +19,19 @@ double tool(int a,int b,int c,int d)
     return pow(pow((a-c),2) + pow((b-d),2),0.5);
 }
 
+// this function calculates the circumfrence of the foursquare
 double mohit(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
 {
     return  tool(a1,a2,a3,a4) + tool(a3,a4,a5,a6) + tool(a5,a6,a7,a8) + tool(a7,a8,a1,a2);
 }
 
+// this function calculates the area of the foursquare
 double masahat(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
 {
     double a = tool(a1,a2,a3,a4);
     double b = tool(a3,a4,a5,a6);
     double c = tool(a1,a2,a5,a6);
+    // calculating the area of half of foursquare (a triangle) with heron formula
     double p1 = (a+b+c)/2;
     double d  = tool(a5,a6,a7,a8);
     double e = tool(a7,a8,a1,a2);
@@ -50,6 +55,7 @@ int main()
         printf("%.02lf \n",masahat(a1,a2,a3,a4,a5,a6,a7,a8));
         printf("%.02lf\n",mohit(a1,a2,a3,a4,a5,a6,a7,a8));
 
+        // this part is for calculating the most ratio of area to circumfrence
         double nesbat =  masahat(a1,a2,a3,a4,a5,a6,a7,a8) / mohit(a1,a2,a3,a4,a5,a6,a7,a8);
 
         big = max(big,nesbat);
