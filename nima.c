@@ -25,7 +25,11 @@ double mohit(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
 
 // this function calculates the area of the foursquare
 <<<<<<< HEAD
+<<<<<<< HEAD
 double are(int a1,int a2,int a3,int a4,double a5,int a6,int a7,int a8)
+=======
+double masahat(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
+>>>>>>> parent of edb240b (added file 'nima.c')
 =======
 double masahat(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
 >>>>>>> parent of edb240b (added file 'nima.c')
