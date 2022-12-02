@@ -18,13 +18,17 @@ double tool(double a,double b,int c,int d)
 }
 
 // this function calculates the circumfrence of the foursquare
-double circum(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
+double mohit(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
 {
     return  tool(a1,a2,a3,a4) + tool(a3,a4,a5,a6) + tool(a5,a6,a7,a8) + tool(a7,a8,a1,a2);
 }
 
 // this function calculates the area of the foursquare
+<<<<<<< HEAD
 double are(int a1,int a2,int a3,int a4,double a5,int a6,int a7,int a8)
+=======
+double masahat(int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8)
+>>>>>>> parent of edb240b (added file 'nima.c')
 {
     double a = tool(a1,a2,a3,a4);
     float b = tool(a3,a4,a5,a6);
@@ -50,13 +54,13 @@ int main()
     for (int i = 0;i<n;i++)
     {
         scanf("%d %d %d %d %d %d %d %d",&a1,&a2,&a3,&a4,&a5,&a6,&a7,&a8);
-        printf("%.02lf \n",area(a1,a2,a3,a4,a5,a6,a7,a8));
-        printf("%.02lf\n",circum(a1,a2,a3,a4,a5,a6,a7,a8));
+        printf("%.02lf \n",masahat(a1,a2,a3,a4,a5,a6,a7,a8));
+        printf("%.02lf\n",mohit(a1,a2,a3,a4,a5,a6,a7,a8));
 
         // this part is for calculating the most ratio of area to circumfrence
-        double ratio =  area(a1,a2,a3,a4,a5,a6,a7,a8) / circum(a1,a2,a3,a4,a5,a6,a7,a8);
+        double nesbat =  masahat(a1,a2,a3,a4,a5,a6,a7,a8) / mohit(a1,a2,a3,a4,a5,a6,a7,a8);
 
-        big = max(big,ratio);
+        big = max(big,nesbat);
     }
 
     printf("%.02lf\n",big);
